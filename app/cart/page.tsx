@@ -1,7 +1,9 @@
 import { CartItems } from "@/components/cart-items"
 import { CartSummary } from "@/components/cart-summary"
+import { useShoppingCart } from "use-shopping-cart"
 
 export default function Page() {
+
   return (
     <div>
       <main className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -15,8 +17,10 @@ export default function Page() {
               Items in your shopping cart
             </h2>
             {/* Cart Items */}
+            <CartItems />
           </section>
           {/* Cart Summary */}
+          <CartSummary />
         </form>
       </main>
     </div>
